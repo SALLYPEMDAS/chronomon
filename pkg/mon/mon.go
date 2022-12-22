@@ -23,7 +23,22 @@ func Color(planet Planet) string {
 
 switch(planet){
 case Saturn:
-return "black";
+return "black"
+case Jupeter:
+return "blue"
+case Mars:
+return "red"
+case Sun:
+return "yellow"
+case Venus:
+return "green"
+case Mercury:
+return "rainbow"
+case Moon:
+return "silver"
+
+
+
 
 default:
 return "-1";
