@@ -1,6 +1,9 @@
 package mon
 
-import "fmt"
+import (
+"fmt"
+"time"
+)
 
 type Planet int64
 
@@ -17,6 +20,12 @@ const (
 
 func Mon () {
 fmt.Println("hello world")
+}
+
+func ToPlanet(t time.Time) Planet {
+
+return Saturn
+
 }
 
 func Color(planet Planet) string {
