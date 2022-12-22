@@ -19,6 +19,27 @@ const (
 	Moon
 )
 
+func IntToPlanetString(i Planet) string {
+switch (i) {
+case 0: 
+return "Saturn"
+case 1:
+return "Jupeter"
+case 2:
+return "Mars"
+case 3:
+return "Sun"
+case 4:
+return "Venus"
+case 5:
+return "Mercury"
+case 6:
+return "Moon"
+default: 
+return "-1"
+}
+}
+
 func Mon () {
 fmt.Println("hello world")
 }
