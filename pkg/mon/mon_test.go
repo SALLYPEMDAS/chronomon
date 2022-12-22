@@ -1,6 +1,9 @@
 package mon_test
 
 import (
+"time"
+"fmt"
+
   . "github.com/onsi/ginkgo/v2"
   . "github.com/onsi/gomega"
 
@@ -17,6 +20,16 @@ It("test", func() {
         Expect(mon.Color(mon.Venus)).To(Equal("green"))
         Expect(mon.Color(mon.Mercury)).To(Equal("rainbow"))
         Expect(mon.Color(mon.Moon)).To(Equal("silver"))
+
+//func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time
+
+nyc, _ := time.LoadLocation("America/New_York")
+
+
+// sunday
+d := time.Date(1970, 2, 1, 6, 1,1,1, nyc)
+
+fmt.Printf("%v", d)
 
 
 
