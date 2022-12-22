@@ -31,9 +31,12 @@ d := time.Date(1970, 2, 1, 6, 1,1,1, nyc)
 
 fmt.Printf("%v", d)
 
-Expect(mon.ToPlanet(d)).To(Equal(mon.Saturn))
+Expect(mon.ToPlanetDay(d)).To(Equal(mon.Saturn))
 
 
+d = d.Add(time.Hour)
+
+Expect(mon.ToPlanetDay(d)).To(Equal(mon.Sun))
 
 })
 
