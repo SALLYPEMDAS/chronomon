@@ -1,1 +1,6 @@
 PUBLIC DOMAIN
+
+see https://github.com/onsi/ginkgo/blob/master/LICENSE Copyright (c) 2013-2014 Onsi Fakhouri
+
+and https://github.com/onsi/gomega/blob/master/LICENSE Copyright (c) 2013-2014 Onsi Fakhouri
+for  license of testing libraries (thanks onsi)
